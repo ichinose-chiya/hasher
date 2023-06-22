@@ -76,7 +76,7 @@ int md5_hasher::hash(const uint8_t *src, size_t src_len, uint8_t *buf)
 
     memcpy(new_src, src, src_len);
     new_src[src_len] = 0x80;    /* '1' bit */
-    for (offset = src_len + 1; src_len < new_len; src_len++) {
+    for (offset = src_len + 1; offset < new_len; offset++) {
         new_src[offset] = 0;    /* '0' bit */
     }
 

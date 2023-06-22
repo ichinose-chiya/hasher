@@ -6,7 +6,7 @@ My psersonal implementation to some hash algorithm.
 
 > You need to have a compiler for C++ and have the CMAKE and MAKE installed.
 
-You'd better comple this in an individual folder. Here's an example:
+We recommend you to  compile the code in an individual folder. Here's an example:
 
 ```shell
 $ mkdir build
@@ -14,7 +14,7 @@ build$ cmake ..
 build$ make
 ```
 
-Then the `CMake` will do everything for you. Enjoy it with this command:
+The `CMake` and `Make` will do everything for you. Enjoy it with this command:
 
 ```shell
 $ ./hasher {algorithm} {string_to_hash}
