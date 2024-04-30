@@ -12,9 +12,13 @@ using namespace std;
 
 static void hex_dump(const uint8_t *src, size_t src_len)
 {
+    cout << "[";
+
     for (int i = 0; i < src_len; i++) {
         cout << hex << setfill('0') << setw(2) << (int) src[i];
     }
+
+    cout << "]";
 }
 
 int main(int argc, char*argv[], char*envp[])
